@@ -90,7 +90,7 @@ const ContactPage = () => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-card border border-border p-8 rounded-2xl max-w-sm w-full text-center shadow-2xl relative"
+              className="bg-card border border-gray-200 p-8 rounded-2xl max-w-sm w-full text-center shadow-2xl relative"
             >
               <button 
                 onClick={() => setShowThankYou(false)}
@@ -166,7 +166,7 @@ const ContactPage = () => {
               ))}
 
               {/* LIVE GOOGLE MAP EMBED */}
-              <motion.div variants={fadeUp} className="mt-8 overflow-hidden rounded-xl border border-border">
+              <motion.div variants={fadeUp} className="mt-8 overflow-hidden rounded-xl border border-gray-200">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.76179477614!2d77.59768997576566!3d12.919897016027163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150065a53f3b%3A0x8f9dfd7cc4238370!2sFreeze%20Control!5e0!3m2!1sen!2sin!4v1711545600000!5m2!1sen!2sin"
                   width="100%"
@@ -187,7 +187,7 @@ const ContactPage = () => {
               variants={fadeUp} 
               className="lg:col-span-3"
             >
-              <Card className="border-border/50 shadow-xl shadow-accent/5">
+              <Card className="border-gray-200/50 shadow-xl shadow-accent/5">
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold text-foreground mb-6">Book a Service</h3>
                   <form onSubmit={handleSubmit} className="space-y-5">

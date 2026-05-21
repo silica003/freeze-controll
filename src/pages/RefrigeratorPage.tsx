@@ -84,12 +84,12 @@ const RefrigeratorPage = () => (
   </div>
 </section>
 
-    <section className="py-16 border-b border-border">
+    <section className="py-16 border-b border-gray-200">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceTypes.map((s, i) => (
             <motion.div key={s.label} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-              className="flex items-center gap-3 p-5 rounded-lg border border-border bg-card">
+              className="flex items-center gap-3 p-5 rounded-lg border border-gray-200 bg-card">
               <s.icon className="h-6 w-6 text-accent" />
               <span className="font-semibold text-foreground">{s.label}</span>
             </motion.div>
@@ -113,7 +113,7 @@ const RefrigeratorPage = () => (
     <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
       {fridgeTypes.map((f, i) => (
         <motion.div key={f.name} variants={fadeUp}>
-          <Card className="h-full overflow-hidden border border-border/50 bg-card rounded-xl group hover:shadow-2xl hover:border-accent/10 transition-all duration-300">
+          <Card className="h-full overflow-hidden border border-gray-200/50 bg-card rounded-xl group hover:shadow-2xl hover:border-accent/10 transition-all duration-300">
             {/* Image Container: Premium aspect ratio and hover effect */}
             <div className="aspect-[4/3] overflow-hidden">
               <img 

@@ -16,7 +16,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -40,7 +40,7 @@ const Navbar = () => {
               Services <ChevronDown className="h-3.5 w-3.5" />
             </button>
             <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              <div className="w-64 rounded-lg border border-border bg-card shadow-lg p-2">
+              <div className="w-64 rounded-lg border border-gray-200 bg-card shadow-lg p-2">
                 {services.map((s) => (
                   <Link key={s.path} to={s.path} className="block rounded-md px-3 py-2.5 text-sm text-foreground hover:bg-secondary transition-colors">
                     {s.name}
@@ -72,7 +72,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-border bg-background">
+        <div className="lg:hidden border-t border-gray-200 bg-background">
           <div className="container mx-auto px-4 py-4 space-y-1">
             <Link to="/" onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2.5 text-sm font-medium hover:bg-secondary">Home</Link>
             <button onClick={() => setServicesOpen(!servicesOpen)} className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm font-medium hover:bg-secondary">

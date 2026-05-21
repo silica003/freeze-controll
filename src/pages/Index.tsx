@@ -69,12 +69,12 @@ const Index = () => {
       </section>
 
       {/* Stats */}
-      <section className="border-b border-border">
+      <section className="border-b border-gray-200">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, i) => (
               <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="flex items-center gap-3 py-8 px-4 border-r last:border-r-0 border-border">
+                className="flex items-center gap-3 py-8 px-4 border-r last:border-r-0 border-gray-200">
                 <stat.icon className="h-8 w-8 text-accent flex-shrink-0" />
                 <div>
                   <p className="text-xl font-bold text-foreground">{stat.value}</p>
@@ -112,7 +112,7 @@ const Index = () => {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid md:grid-cols-3 gap-8">
             {services.map((s) => (
               <motion.div key={s.title} variants={fadeUp}>
-                <Card className="h-full border-border/50 hover:shadow-lg transition-shadow duration-300 group overflow-hidden">
+                <Card className="h-full border-gray-200/50 hover:shadow-lg transition-shadow duration-300 group overflow-hidden">
                   <div className="h-48 overflow-hidden">
                     <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
@@ -134,7 +134,7 @@ const Index = () => {
       </section>
 
       {/* Brand Scroller */}
-      <section className="py-16 border-t border-border">
+      <section className="py-16 border-t border-gray-200">
         <div className="container mx-auto px-4 lg:px-8">
           <p className="text-center text-xs uppercase tracking-widest text-muted-foreground mb-10">Trusted by Major Brands</p>
           <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-14">

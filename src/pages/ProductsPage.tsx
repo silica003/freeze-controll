@@ -83,7 +83,7 @@ const ProductsPage = () => {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filtered.map((p) => (
               <motion.div key={p.name} variants={fadeUp}>
-                <Card className="h-full border-border/50 hover:shadow-md transition-shadow group overflow-hidden">
+                <Card className="h-full border-gray-200/50 hover:shadow-md transition-shadow group overflow-hidden">
                   <CardContent className="p-6">
                     <div className="w-full h-40 rounded-md overflow-hidden mb-4">
                       <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />

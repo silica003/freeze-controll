@@ -84,12 +84,12 @@ const ACServicePage = () => (
 </section>
 
     {/* Service Types */}
-    <section className="py-16 border-b border-border">
+    <section className="py-16 border-b border-gray-200">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceTypes.map((s, i) => (
             <motion.div key={s.label} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-              className="flex items-center gap-3 p-5 rounded-lg border border-border bg-card">
+              className="flex items-center gap-3 p-5 rounded-lg border border-gray-200 bg-card">
               <s.icon className="h-6 w-6 text-accent" />
               <span className="font-semibold text-foreground">{s.label}</span>
             </motion.div>
@@ -120,7 +120,7 @@ const ACServicePage = () => (
     >
       {acTypes.map((ac) => (
         <motion.div key={ac.name} variants={fadeUp}>
-          <Card className="group h-full overflow-hidden border-border/50 hover:border-accent/30 transition-all duration-300 shadow-sm hover:shadow-xl">
+          <Card className="group h-full overflow-hidden border-gray-200/50 hover:border-accent/30 transition-all duration-300 shadow-sm hover:shadow-xl">
             
             {/* Image Section - Fixed Height for alignment */}
             <div className="relative h-48 overflow-hidden">
