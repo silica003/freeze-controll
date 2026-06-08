@@ -147,9 +147,11 @@ const ACServicePage = () => (
               <div className="mt-4 flex items-center text-xs font-bold text-accent uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">
                 Professional Service Available
               </div>
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8">
-                              <Link to="/contact">Book a Service <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
+              <Link to="/contact" className="w-full">
+                <Button variant="outline" size="sm" className="bg-accent text-accent-foreground  w-full">
+                  Request Quote
+                </Button>
+              </Link>  
             </CardContent>
           </Card>
         </motion.div>
