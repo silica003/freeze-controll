@@ -3,8 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import acImg from "@/assets/ac.webp";
-
-
 import splitImg from "@/assets/split-ac.avif";
 import cassetteImg from "@/assets/cassette-ac.jpg";
 import centralImg from "@/assets/central-ac.jpg";
@@ -147,13 +145,17 @@ const ACServicePage = () => (
               <div className="mt-4 flex items-center text-xs font-bold text-accent uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">
                 Professional Service Available
               </div>
-                 <div>           
-                 <Link to="/contact" className="w-full"></Link>
-                  <Button variant="outline" size="sm" className="bg-accent text-accent-foreground  w-full">
-                    Request Quote
-                  </Button>
-                
-                </div> 
+                 <div>
+                    <Button
+                      asChild
+                      size="sm"
+                      className="bg-[#0D47A1] hover:bg-[#083378] text-white w-full font-semibold"
+                    >
+                      <Link to="/contact">
+                        Get Free Quote
+                      </Link>
+                    </Button>
+                  </div>
                 
               
               
