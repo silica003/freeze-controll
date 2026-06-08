@@ -147,13 +147,14 @@ const ACServicePage = () => (
               <div className="mt-4 flex items-center text-xs font-bold text-accent uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">
                 Professional Service Available
               </div>
-              <div>                <Link to="/contact" className="w-full">
+                             
+                <Link to="/contact" className="w-full">
 
                 <Button className="mt-4 flex items-center text-xs font-bold text-accent uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity"> 
                 Buy a service
                 </Button>
                 </Link>
-              </div>
+              
               
             </CardContent>
           </Card>
