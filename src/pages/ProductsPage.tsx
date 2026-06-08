@@ -90,7 +90,7 @@ const ProductsPage = () => {
                     </div>
                     <h3 className="font-semibold text-foreground mb-3">{p.name}</h3>
                     <Link to="/contact" className="w-full">
-  <Button variant="outline" size="sm" className="w-full">
+  <Button variant="outline" size="sm" className="bg-accent text-accent-foreground  w-full">
     Request Quote
   </Button>
 </Link>                  </CardContent>
