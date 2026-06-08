@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Wrench, Settings, SprayCan, PackagePlus, Wind, Building2, Factory, Cpu, TowerControl, Warehouse } from "lucide-react";
+import { Wrench, Settings, SprayCan, PackagePlus, Wind, Building2, Factory, Cpu, TowerControl, Warehouse, Link, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,6 +13,7 @@ import towerImg from "@/assets/tower-ac.webp";
 import ductableImg from "@/assets/ductable-ac.jpg";
 import chillerImg from "@/assets/chiller-plants.jpg";
 import hvacImg from "@/assets/hvac.jpeg";
+import { Button } from "@/components/ui/button";
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
@@ -145,6 +146,9 @@ const ACServicePage = () => (
               <div className="mt-4 flex items-center text-xs font-bold text-accent uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">
                 Professional Service Available
               </div>
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8">
+                              <Link to="/contact">Book a Service <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              </Button>
             </CardContent>
           </Card>
         </motion.div>
