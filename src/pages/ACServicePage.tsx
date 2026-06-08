@@ -1,4 +1,4 @@
-import { Wrench, Settings, SprayCan, PackagePlus, Wind, Building2, Factory, Cpu, TowerControl, Warehouse, Link, ArrowRight } from "lucide-react";
+import { Wrench, Settings, SprayCan, PackagePlus, Wind, Building2, Factory, Cpu, TowerControl, Warehouse, Link, ArrowRight, LinkIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -147,14 +147,14 @@ const ACServicePage = () => (
               </div>
                  <div>
                     <Button
-                      asChild
-                      size="sm"
-                      className="bg-[#0D47A1] hover:bg-[#083378] text-white w-full font-semibold"
-                    >
-                      <Link to="/contact">
-                        Get Free Quote
-                      </Link>
-                    </Button>
+  asChild
+  className="bg-[#0D47A1] hover:bg-[#083378] text-white w-full"
+>
+  <Link to="/contact" className="flex items-center justify-center gap-2">
+    <LinkIcon className="h-4 w-4" />
+    Request Service
+  </Link>
+</Button>
                   </div>
                 
               
