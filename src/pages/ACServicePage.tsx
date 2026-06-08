@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
 import { Wrench, Settings, SprayCan, PackagePlus, Wind, Building2, Factory, Cpu, TowerControl, Warehouse, Link, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import acImg from "@/assets/ac.webp";
+
 
 import splitImg from "@/assets/split-ac.avif";
 import cassetteImg from "@/assets/cassette-ac.jpg";
@@ -14,6 +14,7 @@ import ductableImg from "@/assets/ductable-ac.jpg";
 import chillerImg from "@/assets/chiller-plants.jpg";
 import hvacImg from "@/assets/hvac.jpeg";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
