@@ -13,6 +13,7 @@ import chillerImg from "@/assets/chiller-plants.jpg";
 import hvacImg from "@/assets/hvac.jpeg";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
@@ -151,7 +152,7 @@ const ACServicePage = () => (
   className="bg-[#0D47A1] hover:bg-[#083378] text-white w-full"
 >
   <Link to="/contact" className="flex items-center justify-center gap-2">
-    <LinkIcon className="h-4 w-4" />
+    
     Request Service
   </Link>
 </Button>
