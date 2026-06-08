@@ -7,6 +7,14 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
+          
+            <img 
+              src="/fc.png" // Replace with your actual logo path (e.g., /public/logo.png)
+              alt="FreezeControl Logo" 
+              className="h-14 w-auto object-contain" 
+              // If you need an exact pixel size, use: style={{ height: '40px' }}
+            />
+          
           <div className="flex items-center gap-2 mb-4">
             <Snowflake className="h-6 w-6 text-accent" />
             <span className="text-lg font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>FreezeControl</span>
