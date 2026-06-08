@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   * {
     @apply border-gray-200;
@@ -37,13 +36,13 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
 }
-
-#root {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
+#root{
+  width:100%;
+  max-width:100%;
+  margin:0;
+  padding:0;
 }
+
 
 /* Header */
 
@@ -295,4 +294,41 @@ footer {
   .section-title h2 {
     font-size: 2rem;
   }
+}
+/* Freeze Control Theme Overrides */
+
+.bg-primary{
+  background:#0D47A1 !important;
+}
+
+.bg-secondary{
+  background:#FFF8E1 !important;
+}
+
+.text-primary{
+  color:#0D47A1 !important;
+}
+
+.text-accent{
+  color:#FFC107 !important;
+}
+
+.bg-accent{
+  background:#FFC107 !important;
+}
+
+.text-primary-foreground{
+  color:#ffffff !important;
+}
+
+.text-foreground{
+  color:#111827 !important;
+}
+
+.bg-background{
+  background:#ffffff !important;
+}
+
+.text-muted-foreground{
+  color:#6b7280 !important;
 }
