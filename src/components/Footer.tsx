@@ -8,16 +8,15 @@ const Footer = () => (
         {/* Brand */}
         <div>
           
-            <img 
-              src="/fc.png" // Replace with your actual logo path (e.g., /public/logo.png)
-              alt="FreezeControl Logo" 
-              className="h-14 w-auto object-contain" 
-              // If you need an exact pixel size, use: style={{ height: '40px' }}
-            />
-          
+  
+
           <div className="flex items-center gap-2 mb-4">
-            <Snowflake className="h-6 w-6 text-accent" />
-            <span className="text-lg font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>FreezeControl</span>
+<img 
+    src="/fc.png" // Replace with your actual logo path (e.g., /public/logo.png)
+    alt="FreezeControl Logo" 
+    className="h-14 w-auto object-contain" 
+    // If you need an exact pixel size, use: style={{ height: '40px' }}
+  />            <span className="text-lg font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>FreezeControl</span>
           </div>
           <p className="text-sm text-primary-foreground/70 leading-relaxed mb-4">
             Expert repair, installation, and servicing for all major HVAC systems and home appliances. Trusted by thousands of customers.
