@@ -322,7 +322,7 @@ footer {
 }
 
 .text-foreground{
-  color:#ffffff !important;
+  color:#111827 !important;
 }
 
 .bg-background{
@@ -330,5 +330,5 @@ footer {
 }
 
 .text-muted-foreground{
-  color:#ededed !important;
+  color:#6b7280 !important;
 }
