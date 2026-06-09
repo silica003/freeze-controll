@@ -53,7 +53,7 @@ const Index = () => {
             <motion.h1 variants={fadeUp} className="text-4xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
               Expert HVAC & Appliance Solutions
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-lg text-primary-foreground/70 mb-8 leading-relaxed">
+            <motion.p variants={fadeUp} className="text-white/90 mb-8 leading-relaxed">
               Repair, Installation, and Service for all major brands. Fast response, certified technicians, and guaranteed satisfaction.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
