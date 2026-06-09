@@ -75,7 +75,7 @@ const ACServicePage = () => (
       {/* Centered Description with bigger font */}
       <motion.p 
         variants={fadeUp} 
-        className="text-primary-foreground/80 text-xl lg:text-2xl max-w-2xl mx-auto leading-relaxed"
+        className="text-lg text-primary-foreground/70 mb-8 leading-relaxed"
       >
         Complete air conditioning solutions — from split units to industrial chiller plants. 
         Expert technicians, all major brands.
