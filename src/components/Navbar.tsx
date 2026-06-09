@@ -40,7 +40,7 @@ const Navbar = () => {
               Services <ChevronDown className="h-3.5 w-3.5" />
             </button>
             <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              <div className="text-white/90 mb-8 leading-relaxed w-64 rounded-lg border border-gray-200 bg-card shadow-lg p-2">
+              <div className="text-white/90 mb-8 leading-relaxed">
                 {services.map((s) => (
                   <Link key={s.path} to={s.path} className="block rounded-md px-3 py-2.5 text-sm text-foreground hover:bg-secondary transition-colors">
                     {s.name}
