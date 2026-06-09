@@ -66,7 +66,7 @@ const ProductsPage = () => {
           <motion.div initial="hidden" animate="visible" variants={stagger} className="max-w-2xl">
             <motion.p variants={fadeUp} className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Parts & Accessories</motion.p>
             <motion.h1 variants={fadeUp} className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">Products & Parts</motion.h1>
-            <motion.p variants={fadeUp} className="text-primary-foreground/70 text-lg">
+            <motion.p variants={fadeUp} className="text-white/90 mb-8 leading-relaxed">
               Genuine replacement parts and accessories for all HVAC and appliance systems.
             </motion.p>
           </motion.div>
