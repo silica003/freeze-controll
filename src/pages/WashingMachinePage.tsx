@@ -58,7 +58,7 @@ const WashingMachinePage = () => (
       </motion.h1>
       
       {/* Increased paragraph size to xl/2xl */}
-      <motion.p variants={fadeUp} className="text-primary-foreground/80 text-xl lg:text-2xl max-w-2xl mx-auto leading-relaxed">
+      <motion.p variants={fadeUp} className="text-white/90 mb-8 leading-relaxed">
         Professional service for all washing machine types. Quick turnaround, expert diagnostics, and lasting repairs.
       </motion.p>
       
